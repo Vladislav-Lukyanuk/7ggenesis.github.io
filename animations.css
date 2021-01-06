@@ -1,0 +1,35 @@
+.fade-out {
+    transition: all 1s ease-out;
+}
+
+.fade-in-block {
+    visibility: hidden;
+}
+
+.fade-in-block_visible {
+    visibility: visible;
+
+    animation: fadein 3s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+.fade-in-block.fade-in-block_visible .page__title::before {
+    animation: widthIncrease 2s;
+}
+
+.fade-in-block.fade-in-block_visible .page__title::after {
+    animation: widthIncrease 2s;
+}
+
+@keyframes widthIncrease {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 5rem;
+    }
+}
