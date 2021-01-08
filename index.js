@@ -24,6 +24,8 @@ $.fn.isInViewport = function() {
 };
 
 $(document).ready(() => {
+    $('.current-year').text((new Date().getFullYear()).toString());  
+
     const toggleHoverState = function (prefix) {
         return function () { $(this).toggleClass(`${prefix}_${HOVER_COMPONENT_STATE}`) };
     };

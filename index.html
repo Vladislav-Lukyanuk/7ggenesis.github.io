@@ -11,19 +11,24 @@
     </head>
     <body>
         <div class="head">
-            <div class="head__logo"></div>
+            <div class="logo"></div>
             <ul class="head__menu">
                 <li class="head__menu-item cursor-pointer">
-                    <a>Наша специализация</a>
+                    <a href="#specialty">Наша специализация</a>
                 </li>
                 <li class="head__menu-item cursor-pointer">
-                    <a>Технологии</a>
+                    <a href="#technology">Технологии</a>
                 </li>
                 <li class="head__menu-item cursor-pointer">
-                    <a>Партнеры</a>
+                    <a href="#partners">Партнеры</a>
+                </li>
+                <li class="head__menu-item cursor-pointer">
+                    <a href="#contacts">Контакты</a>
                 </li>
             </ul>
-            <div class="head__question cursor-pointer fade-out"></div>
+            <a href="#contacts">
+                <div class="head__question cursor-pointer fade-out"></div>
+            </a>
         </div>
         <div class="office">
             <div class="notification">
@@ -49,21 +54,23 @@
                     </p>
                 </div>
             </div>
-            <div class="page fade-in-block">
-                <div class="page__title">
-                    <p>Наша специализация</p>
-                </div>
-                <div class="page__content">
-                    <div class="business">
-                        <div class="business__icon"></div>
-                        <p class="business__text">
-                            Бизнесс направление -
-                            <strong>frontend</strong>
-                            разработка
-                        </p>
+            <a id="specialty">
+                <div class="page fade-in-block">
+                    <div class="page__title">
+                        <p>Наша специализация</p>
+                    </div>
+                    <div class="page__content">
+                        <div class="business">
+                            <div class="business__icon"></div>
+                            <p class="business__text">
+                                Бизнесс направление -
+                                <strong>frontend</strong>
+                                разработка
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </a>
             <div class="dialog fade-in-block">
                 <div class="dialog__message">
                     <p>
@@ -79,37 +86,39 @@
                 </div>
                 <div class="dialog__byte"></div>
             </div>
-            <div class="page fade-in-block">
-                <div class="page__title">
-                    <p>Технологии</p>
+            <a id="technology">
+                <div class="page fade-in-block">
+                    <div class="page__title">
+                        <p>Технологии</p>
+                    </div>
+                    <div class="page__content">
+                        <div class="technology">
+                            <div class="technoligy__circle">
+                                <div class="technology__react"></div>
+                            </div>
+                            <div class="technology__text">
+                                <p>React JS</p>
+                            </div>
+                        </div>
+                        <div class="technology">
+                            <div class="technoligy__circle">
+                                <div class="technology__ts"></div>
+                            </div>
+                            <div class="technology__text">
+                                <p>TypeScript</p>
+                            </div>
+                        </div>
+                        <div class="technology">
+                            <div class="technoligy__circle">
+                                <div class="technology__angular"></div>
+                            </div>
+                            <div class="technology__text">
+                                <p>Angular</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="page__content">
-                    <div class="technology">
-                        <div class="technoligy__circle">
-                            <div class="technology__react"></div>
-                        </div>
-                        <div class="technology__text">
-                            <p>React JS</p>
-                        </div>
-                    </div>
-                    <div class="technology">
-                        <div class="technoligy__circle">
-                            <div class="technology__ts"></div>
-                        </div>
-                        <div class="technology__text">
-                            <p>TypeScript</p>
-                        </div>
-                    </div>
-                    <div class="technology">
-                        <div class="technoligy__circle">
-                            <div class="technology__angular"></div>
-                        </div>
-                        <div class="technology__text">
-                            <p>Angular</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </a>
             <div class="dialog fade-in-block">
                 <div class="dialog__byte"></div>
                 <div class="dialog__message">
@@ -122,27 +131,29 @@
                     </p>
                 </div>
             </div>
-            <div class="page fade-in-block">
-                <div class="page__title">
-                    <p>Партнеры</p>
-                </div>
-                <div class="page__content">
-                    <div class="partners">
-                        <div class="partner">
-                            <div class="partner__bank-icon"></div>
-                            <p class="partner__text">
-                                Банки РФ
-                            </p>
-                        </div>
-                        <div class="partner">
-                            <div class="partner__umbrella-icon"></div>
-                            <p class="partner__text">
-                                Стартапы CA
-                            </p>
+            <a id="partners">
+                <div class="page fade-in-block">
+                    <div class="page__title">
+                        <p>Партнеры</p>
+                    </div>
+                    <div class="page__content">
+                        <div class="partners">
+                            <div class="partner">
+                                <div class="partner__bank-icon"></div>
+                                <p class="partner__text">
+                                    Банки РФ
+                                </p>
+                            </div>
+                            <div class="partner">
+                                <div class="partner__umbrella-icon"></div>
+                                <p class="partner__text">
+                                    Стартапы CA
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
             <div class="dialog fade-in-block">
                 <div class="dialog__message">
                     <p>
@@ -154,6 +165,33 @@
                     </p>
                 </div>
                 <div class="dialog__byte"></div>
+            </div>
+            <a id="contacts">
+                <div class="page fade-in-block">
+                    <div class="page__title">
+                        <p>Контакты</p>
+                    </div>
+                    <div class="page__content">
+                        <div class="contacts">
+                            <div class="contact">
+                                <div class="contact__email-icon"></div>
+                                <a class="contact__text" href="mailto:7ggenesis@gmail.com">
+                                    7ggenesis@gmail.com
+                                </a>
+                            </div>
+                            <div class="contact">
+                                <div class="contact__in-icon"></div>
+                                <a class="contact__text" href="https://www.linkedin.com/in/vladislav-lukyanuk">Vladislav Lukyanuk</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="footer footer_top-offset">
+            <div class="logo logo_bottom-offset"></div>
+            <div class="head__menu-item">
+                <p>Copyright © 2020-<text class="current-year"></text> 7GGenesis. All rights reserved.</p>
             </div>
         </div>
     </body>
