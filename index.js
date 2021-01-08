@@ -29,17 +29,21 @@ $(document).ready(() => {
     const toggleHoverState = function (prefix) {
         return function () { $(this).toggleClass(`${prefix}_${HOVER_COMPONENT_STATE}`) };
     };
+
+    const showBlocksInViewport = function() {
+        $('.fade-in-block').each(function() {
+          if ($(this).isInViewport()) {
+            $(this).addClass(`${COMPONENTS.fadeInBlock.block}_${VISIBILITY_COMPONENT_STATE}`);
+          }
+        });
+    }
     
     $(`.${COMPONENTS.head.elements.question}`).hover(
         toggleHoverState(COMPONENTS.head.elements.question),
         toggleHoverState(COMPONENTS.head.elements.question)
     );
 
-    $(window).on('resize scroll', function() {
-        $('.fade-in-block').each(function() {
-          if ($(this).isInViewport()) {
-            $(this).addClass(`${COMPONENTS.fadeInBlock.block}_${VISIBILITY_COMPONENT_STATE}`);
-          }
-        });
-    });
+    $(window).on('resize scroll', showBlocksInViewport);
+
+    showBlocksInViewport();
 });
