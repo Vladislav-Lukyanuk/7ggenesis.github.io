@@ -78,7 +78,7 @@ a {
 
     height: 29.375rem;
 
-    background-image: url('assets/images/office.jpg');
+    background-image: url('assets/images/man.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -112,12 +112,20 @@ a {
     max-width: 64rem;
 }
 
+.content__first-block {
+    margin-top: 7.5rem;
+}
+
+.content__block {
+    margin-bottom: 7.5rem;
+}
+
 .dialog {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    margin: 7.5rem 1.5rem 6.25rem;
+    padding: 0 1.5rem;
 }
 
 .dialog > * + * {
@@ -135,15 +143,21 @@ a {
 .dialog__message {
     flex-grow: 1;
 
-    text-align: center;
-
     font-size: 1.5rem;
     line-height: 2rem;
 }
 
+.dialog__message_center_align {
+    text-align: center;
+}
+
+.dialog__message_justified_align {
+    text-align: justify;
+}
+
 .dialog__message_bold {
     text-decoration: underline;
-    color: #CE7937;
+    color: #D15718;
 }
 
 .page {
@@ -172,7 +186,7 @@ a {
     height: 0.25rem;
     width: 5rem;
 
-    background-color: #CE7937;
+    background-color: #D15718;
 }
 
 .page__title::after {
@@ -185,7 +199,7 @@ a {
     height: 0.25rem;
     width: 5rem;
 
-    background-color: #CE7937;
+    background-color: #D15718;
 }
 
 .page__content {
@@ -199,7 +213,7 @@ a {
 
     padding: 0.75rem 1.5rem;
 
-    background-color: #CE7937;
+    background-color: #D15718;
     border-radius: 0.25rem;
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.23);
 }
@@ -239,7 +253,7 @@ a {
     width: 12.5rem;
     height: 12.5rem;
 
-    background-color: #CE7937;
+    background-color: #D15718;
     border-radius: 50%;
 }
 
@@ -263,11 +277,11 @@ a {
     background-size: contain;
 }
 
-.technology__angular {
+.technology__redux {
     height: 6.25rem;
     width: 6.625rem;
 
-    background-image: url('assets/images/angular.png');
+    background-image: url('assets/images/redux.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -283,7 +297,7 @@ a {
 
 .partners {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 1.5rem;
 
     width: 51.5rem;
@@ -291,7 +305,6 @@ a {
 
 .partner {
     display: flex;
-    align-items: center;
 
     padding: 1.25rem 2.75rem;
 
@@ -300,31 +313,66 @@ a {
 }
 
 .partner__bank-icon {
-    height: 6.25rem;
-    width: 6.625rem;
-
     background-image: url('assets/images/bank.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+}
+
+.partner__bank-icon_m-size {
+    flex: 0 0 6.25rem;
+
+    height: 6.25rem;
 }
 
 .partner__umbrella-icon {
-    height: 6.25rem;
-    width: 6.625rem;
-
     background-image: url('assets/images/umbrella.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+}
+
+.partner__umbrella-icon_m-size {
+    flex: 0 0 6.25rem;
+
+    height: 6.25rem;
+}
+
+.partner__thumb-up-icon {
+    background-image: url('assets/images/thumb-up.png');
+}
+
+.partner__thumb-up-icon_m-size {
+    flex: 0 0 6.25rem;
+
+    height: 6.25rem;
+}
+
+.partner__event-icon {
+    background-image: url('assets/images/event.png');
+}
+
+.partner__event-up-icon_m-size {
+    flex: 0 0 6.25rem;
+
+    height: 6.25rem;
+}
+
+.partner__pets-icon {
+    background-image: url('assets/images/pets.png');
+}
+
+.partner__pets-icon_m-size {
+    flex: 0 0 6.25rem;
+
+    height: 6.25rem;
 }
 
 .partner__text {
     margin-left: 1.5rem;
 
     font-size: 1.5rem;
-    font-weight: 600;
+    line-height: 2rem;
+    font-weight: 300;
     letter-spacing: 0.05rem;
+}
+
+.partner__text strong {
+    font-weight: 600;
 }
 
 .contacts {
@@ -358,6 +406,20 @@ a {
     height: 3.125rem;
 
     background-image: url('assets/images/in.png');
+}
+
+.contact__hh-icon {
+    width: 3.125rem;
+    height: 3.125rem;
+
+    background-image: url('assets/images/hh.png');
+}
+
+.contact__phone-icon {
+    width: 3.125rem;
+    height: 3.125rem;
+
+    background-image: url('assets/images/phone.png');
 }
 
 .contact__text {
