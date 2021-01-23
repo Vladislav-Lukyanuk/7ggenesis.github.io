@@ -45,12 +45,18 @@ $(document).ready(() => {
         $('.contact__icon').removeClass('contact__icon_right-offset');
         $('.contact__icon').removeClass('contact__icon_bottom-offset');
         $('.contact').removeClass('contact_as-columns');
+        $('.partner__text').removeClass('partner__text_left-offset');
+        $('.partner__text').removeClass('text_align-justify');
+        $('.partner').removeClass('partner_as-column');
 
         if(window.matchMedia('(max-width: 768px)').matches){
             $('.contact__icon').addClass('contact__icon_bottom-offset');
             $('.contact').addClass('contact_as-columns');
+            $('.partner').addClass('partner_as-column');
         } else {
             $('.contact__icon').addClass('contact__icon_right-offset');
+            $('.partner__text').addClass('partner__text_left-offset');
+            $('.partner__text').addClass('text_align-justify');
         }
     }
     

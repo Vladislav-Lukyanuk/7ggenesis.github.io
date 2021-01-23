@@ -27,6 +27,10 @@ a {
     text-align: center;
 }
 
+.text_align-justify {
+    text-align: justify;
+}
+
 .text_light {
     color: #F2F2F2;
 }
@@ -384,7 +388,6 @@ a {
 
 .partner {
     display: flex;
-    flex-direction: column;
 
     padding: 1.25rem 2.75rem;
 
@@ -392,72 +395,42 @@ a {
     box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.23);
 }
 
+.partner_as-column {
+    flex-direction: column;
+}
+
+.partner__icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    flex-grow: 1;
+    flex-shrink: 0;
+    min-width: 6.25rem;
+    height: 6.25rem;
+}
+
 .partner__bank-icon {
     background-image: url('assets/images/bank.png');
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.partner__bank-icon_m-size {
-    flex: 0 0 6.25rem;
-
-    height: 6.25rem;
-}
-
-.partner__umbrella-icon {
-    background-image: url('assets/images/umbrella.png');
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.partner__umbrella-icon_m-size {
-    flex: 0 0 6.25rem;
-
-    height: 6.25rem;
 }
 
 .partner__thumb-up-icon {
     background-image: url('assets/images/thumb-up.png');
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.partner__thumb-up-icon_m-size {
-    flex: 0 0 6.25rem;
-
-    height: 6.25rem;
 }
 
 .partner__event-icon {
     background-image: url('assets/images/event.png');
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.partner__event-up-icon_m-size {
-    flex: 0 0 6.25rem;
-
-    height: 6.25rem;
 }
 
 .partner__pets-icon {
     background-image: url('assets/images/pets.png');
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.partner__pets-icon_m-size {
-    flex: 0 0 6.25rem;
-
-    height: 6.25rem;
 }
 
 .partner__text {
-    font-size: 1.5rem;
-    line-height: 2rem;
     font-weight: 300;
     letter-spacing: 0.05rem;
-    text-align: center;
+}
+
+.partner__text_left-offset {
+    margin-left: 1.5rem;
 }
 
 .partner__text strong {
@@ -624,11 +597,6 @@ a {
     }
 
     .partner {
-        flex-direction: row;
-    }
-
-    .partner__text {
-        margin-left: 1.5rem;
-        text-align: justify;
+        
     }
 }
