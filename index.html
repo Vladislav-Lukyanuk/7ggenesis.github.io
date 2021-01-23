@@ -12,6 +12,10 @@
     <body>
         <div class="head">
             <div class="logo"></div>
+            <input class="head__menu-button" type="checkbox" id="menu-btn" />
+            <label class="head__menu-icon" for="menu-btn">
+                <span class="navicon"></span>
+            </label>
             <ul class="head__menu">
                 <li class="head__menu-item cursor-pointer">
                     <a href="#specialty">Направление</a>
@@ -26,8 +30,7 @@
                     <a href="#contacts">Контакты</a>
                 </li>
             </ul>
-            <a href="#contacts">
-                <div class="head__question cursor-pointer fade-out"></div>
+            <a href="#contacts" class="head__question cursor-pointer fade-out">
             </a>
         </div>
         <div class="office">
@@ -91,28 +94,30 @@
                         <p>Технологии</p>
                     </div>
                     <div class="page__content">
-                        <div class="technology">
-                            <div class="technoligy__circle">
-                                <div class="technology__react"></div>
+                        <div class="technologies">
+                            <div class="technology">
+                                <div class="technoligy__circle">
+                                    <div class="technology__react"></div>
+                                </div>
+                                <div class="technology__text">
+                                    <p>React JS</p>
+                                </div>
                             </div>
-                            <div class="technology__text">
-                                <p>React JS</p>
+                            <div class="technology">
+                                <div class="technoligy__circle">
+                                    <div class="technology__ts"></div>
+                                </div>
+                                <div class="technology__text">
+                                    <p>TypeScript</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="technology">
-                            <div class="technoligy__circle">
-                                <div class="technology__ts"></div>
-                            </div>
-                            <div class="technology__text">
-                                <p>TypeScript</p>
-                            </div>
-                        </div>
-                        <div class="technology">
-                            <div class="technoligy__circle">
-                                <div class="technology__redux"></div>
-                            </div>
-                            <div class="technology__text">
-                                <p>Redux</p>
+                            <div class="technology">
+                                <div class="technoligy__circle">
+                                    <div class="technology__redux"></div>
+                                </div>
+                                <div class="technology__text">
+                                    <p>Redux</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -234,7 +239,7 @@
         </div>
         <div class="footer footer_top-offset">
             <div class="logo logo_bottom-offset"></div>
-            <div class="head__menu-item">
+            <div class="footer_text">
                 <p>Copyright © 2020-<text class="current-year"></text> Vladislav Lukyanuk. All rights reserved.</p>
             </div>
         </div>
