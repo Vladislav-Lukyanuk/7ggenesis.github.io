@@ -13,9 +13,18 @@ a {
     color: inherit;
 }
 
+.text_size-s {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
 .text_size-m {
     font-size: 1.5rem;
     line-height: 2rem;
+}
+
+.text_align-center {
+    text-align: center;
 }
 
 .text_light {
@@ -465,9 +474,12 @@ a {
 
 .contact {
     display: flex;
-    flex-direction: column;
 
     align-items: center;
+}
+
+.contact_as-columns {
+    flex-direction: column;
 }
 
 .contact + .contact {
@@ -529,12 +541,6 @@ a {
 
 .footer_top-offset {
     margin-top: 5rem;
-}
-
-.footer_text {
-    color: #F2F2F2;
-    line-height: 1.5rem;
-    text-align: center;
 }
 
 @media screen and (min-width: 768px) {
@@ -624,9 +630,5 @@ a {
     .partner__text {
         margin-left: 1.5rem;
         text-align: justify;
-    }
-
-    .contact {
-        flex-direction: row;
     }
 }

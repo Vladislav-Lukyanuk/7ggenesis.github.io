@@ -44,9 +44,11 @@ $(document).ready(() => {
         console.log('adapt')
         $('.contact__icon').removeClass('contact__icon_right-offset');
         $('.contact__icon').removeClass('contact__icon_bottom-offset');
+        $('.contact').removeClass('contact_as-columns');
 
         if(window.matchMedia('(max-width: 768px)').matches){
             $('.contact__icon').addClass('contact__icon_bottom-offset');
+            $('.contact').addClass('contact_as-columns');
         } else {
             $('.contact__icon').addClass('contact__icon_right-offset');
         }
