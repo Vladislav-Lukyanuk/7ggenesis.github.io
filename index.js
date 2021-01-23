@@ -13,6 +13,8 @@ const COMPONENTS = {
     }
 }
 
+
+
 $.fn.isInViewport = function() {
     var elementTop = $(this).offset().top;
     var elementBottom = elementTop + $(this).outerHeight();
@@ -37,6 +39,18 @@ $(document).ready(() => {
           }
         });
     }
+
+    const adapt = function() {
+        console.log('adapt')
+        $('.contact__icon').removeClass('contact__icon_right-offset');
+        $('.contact__icon').removeClass('contact__icon_bottom-offset');
+
+        if(window.matchMedia('(max-width: 768px)').matches){
+            $('.contact__icon').addClass('contact__icon_bottom-offset');
+        } else {
+            $('.contact__icon').addClass('contact__icon_right-offset');
+        }
+    }
     
     $(`.${COMPONENTS.head.elements.question}`).hover(
         toggleHoverState(COMPONENTS.head.elements.question),
@@ -44,6 +58,8 @@ $(document).ready(() => {
     );
 
     $(window).on('resize scroll', showBlocksInViewport);
+    $(window).on('resize', adapt);
 
     showBlocksInViewport();
+    adapt();
 });

@@ -13,6 +13,15 @@ a {
     color: inherit;
 }
 
+.text_size-m {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.text_light {
+    color: #F2F2F2;
+}
+
 .head {
     position: sticky;
     top: 0;
@@ -50,16 +59,10 @@ a {
     transition: max-height .5s ease-out;
 }
 
-
-
 .head__menu-item {
     position: relative;
 
     padding: 1rem 0 1rem 3rem;
-
-    color: #F2F2F2;
-    font-size: 1.5rem;
-    line-height: 2rem;
 }
 
 .head__menu-button {
@@ -474,39 +477,36 @@ a {
     border-top: 0.063rem solid #DBDBDB;
 }
 
-.contact__email-icon {
+.contact__icon {
     width: 3.125rem;
     height: 3.125rem;
+}
 
+.contact__icon_bottom-offset {
+    margin-bottom: 1.5rem;
+}
+
+.contact__icon_right-offset {
+    margin-right: 1.5rem;
+}
+
+.contact__icon_email {
     background-image: url('assets/images/email.png');
 }
 
-.contact__in-icon {
-    width: 3.125rem;
-    height: 3.125rem;
-
+.contact__icon_in {
     background-image: url('assets/images/in.png');
 }
 
-.contact__hh-icon {
-    width: 3.125rem;
-    height: 3.125rem;
-
+.contact__icon_hh {
     background-image: url('assets/images/hh.png');
 }
 
-.contact__phone-icon {
-    width: 3.125rem;
-    height: 3.125rem;
-
+.contact__icon_phone {
     background-image: url('assets/images/phone.png');
 }
 
 .contact__text {
-    margin-top: 1.5rem;
-
-    font-size: 1.5rem;
-    line-height: 2rem;
     font-weight: 600;
     letter-spacing: 0.05rem;
     word-break: break-word;
@@ -628,9 +628,5 @@ a {
 
     .contact {
         flex-direction: row;
-    }
-
-    .contact__text {
-        margin: 0 0 0 1.5rem;
     }
 }
