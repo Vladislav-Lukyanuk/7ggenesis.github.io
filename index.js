@@ -42,19 +42,58 @@ $(document).ready(() => {
 
     const adapt = function() {
         console.log('adapt')
+        $('.logo').removeClass('logo_size-m');
+        $('.logo').removeClass('logo_size-l');
+
+        $('.page__title').removeClass('text_size-s');
+        $('.page__title').removeClass('text_size-m-1');
+        $('.page__title').removeClass('page__title_small-underline');
+        $('.page__title').removeClass('page__title_underline');
+
+        $('.contact').removeClass('contact_offset-m');
+        $('.contact').removeClass('contact_offset-l');
+
+        $('.footer__text').removeClass('text_size-s');
+        $('.footer__text').removeClass('text_size-m');
+
         $('.contact__icon').removeClass('contact__icon_right-offset');
         $('.contact__icon').removeClass('contact__icon_bottom-offset');
+        $('.contact__icon').removeClass('contact__icon_l-size');
+        $('.contact__icon').removeClass('contact__icon_m-size');
+
         $('.contact').removeClass('contact_as-columns');
         $('.partner__text').removeClass('partner__text_left-offset');
         $('.partner__text').removeClass('text_align-justify');
         $('.partner').removeClass('partner_as-column');
+        $('.contact__text').removeClass('text_size-m');
+        $('.contact__text').removeClass('text_size-l');
 
-        if(window.matchMedia('(max-width: 768px)').matches){
+        if(window.screen.width <= 425) {
+            $('.logo').addClass('logo_size-l');
+
+            $('.page__title').addClass('text_size-m-1');
+            $('.page__title').addClass('page__title_underline');
+
+            $('.footer__text').addClass('text_size-m');
+
+            $('.contact').addClass('contact_offset-l');
+            $('.contact__text').addClass('text_size-l');
             $('.contact__icon').addClass('contact__icon_bottom-offset');
+            $('.contact__icon').addClass('contact__icon_l-size');
             $('.contact').addClass('contact_as-columns');
             $('.partner').addClass('partner_as-column');
         } else {
+            $('.logo').addClass('logo_size-m');
+
+            $('.page__title').addClass('text_size-m');
+            $('.page__title').addClass('page__title_small-underline');
+
+            $('.footer__text').addClass('text_size-s');
+
+            $('.contact').addClass('contact_offset-m');
+            $('.contact__text').addClass('text_size-m');
             $('.contact__icon').addClass('contact__icon_right-offset');
+            $('.contact__icon').addClass('contact__icon_m-size');
             $('.partner__text').addClass('partner__text_left-offset');
             $('.partner__text').addClass('text_align-justify');
         }

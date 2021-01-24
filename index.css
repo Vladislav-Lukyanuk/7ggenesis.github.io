@@ -23,6 +23,21 @@ a {
     line-height: 2rem;
 }
 
+.text_size-m-05 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+}
+
+.text_size-m-1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+}
+
+.text_size-l {
+    font-size: 4rem;
+    line-height: 5rem;
+}
+
 .text_align-center {
     text-align: center;
 }
@@ -52,10 +67,23 @@ a {
 }
 
 .logo {
-    height: 3.125rem;
-    width: 2.25rem;
+    height: var(--height);
+    width: var(--width);
 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: url('assets/images/logo.png');
+}
+
+.logo_size-m {
+    --height: 3.125rem;
+    --width: 2.25rem;
+}
+
+.logo_size-l {
+    --height: 7.813rem;
+    --width: 5.625rem;
 }
 
 .logo_bottom-offset {
@@ -248,9 +276,18 @@ a {
 
     margin-bottom: 3rem;
 
-    font-size: 1.5rem;
     letter-spacing: 0.1rem;
     text-align: center;
+}
+
+.page__title_small-underline {
+    --height: 0.25rem;
+    --width: 5rem;
+}
+
+.page__title_underline {
+    --height: 0.5rem;
+    --width: 10rem;
 }
 
 .page__title::before {
@@ -260,8 +297,8 @@ a {
     bottom: -1rem;
     right: 50%;
 
-    height: 0.25rem;
-    width: 5rem;
+    height: var(--height);
+    width: var(--width);
 
     background-color: #D15718;
 }
@@ -273,8 +310,8 @@ a {
     bottom: -1rem;
     left: 50%;
 
-    height: 0.25rem;
-    width: 5rem;
+    height: var(--height);
+    width: var(--width);
 
     background-color: #D15718;
 }
@@ -448,7 +485,18 @@ a {
 .contact {
     display: flex;
 
+    padding-top: var(--offset);
+    padding-bottom: var(--offset);
+
     align-items: center;
+}
+
+.contact_offset-m {
+    --offset: 1.5rem;
+}
+
+.contact_offset-l {
+    --offset: 4rem;
 }
 
 .contact_as-columns {
@@ -456,15 +504,23 @@ a {
 }
 
 .contact + .contact {
-    margin-top: 1.5rem;
-    padding-top: 1.5rem;
-
     border-top: 0.063rem solid #DBDBDB;
 }
 
 .contact__icon {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.contact__icon_m-size {
     width: 3.125rem;
     height: 3.125rem;
+}
+
+.contact__icon_l-size {
+    width: 10rem;
+    height: 10rem;
 }
 
 .contact__icon_bottom-offset {
@@ -512,11 +568,14 @@ a {
     background-color: #161616;
 }
 
+.footer__text {
+}
+
 .footer_top-offset {
     margin-top: 5rem;
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (max-width: 768px) {
     .head__menu-item {
         font-size: 1rem;
     }
@@ -599,4 +658,4 @@ a {
     .partner {
         
     }
-}
+} */
