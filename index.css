@@ -13,42 +13,7 @@ a {
     color: inherit;
 }
 
-.text_size-s {
-    font-size: 1rem;
-    line-height: 1.5rem;
-}
 
-.text_size-m {
-    font-size: 1.5rem;
-    line-height: 2rem;
-}
-
-.text_size-m-05 {
-    font-size: 3rem;
-    line-height: 3.5rem;
-}
-
-.text_size-m-1 {
-    font-size: 3.5rem;
-    line-height: 4rem;
-}
-
-.text_size-l {
-    font-size: 4rem;
-    line-height: 5rem;
-}
-
-.text_align-center {
-    text-align: center;
-}
-
-.text_align-justify {
-    text-align: justify;
-}
-
-.text_light {
-    color: #F2F2F2;
-}
 
 .head {
     position: sticky;
@@ -211,9 +176,15 @@ a {
 }
 
 .content {
-    margin: 0 auto;
-
     max-width: 64rem;
+}
+
+.content_tablet {
+    margin: 0 auto;
+}
+
+.content_phone {
+    margin: 0 2rem;
 }
 
 .content__first-block {
@@ -321,6 +292,10 @@ a {
     justify-content: center;
 }
 
+.page__content_tablet {
+    padding: 0 1.5rem;
+}
+
 .business {
     display: flex;
     flex-direction: column;
@@ -416,49 +391,38 @@ a {
 .partners {
     display: grid;
     grid-template-columns: 1fr;
+}
+
+.partners_m-gap {
     grid-gap: 1.5rem;
+}
 
-    margin: 0 1.5rem;
-
-    max-width: 51.5rem;
+.partners_l-gap {
+    grid-gap: 2.5rem;
 }
 
 .partner {
     display: flex;
 
-    padding: 1.25rem 2.75rem;
-
     background-color: #FEFEFE;
     box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.23);
 }
 
+.partner_m-padding {
+    padding: 1.25rem 2.75rem;
+}
+
+.partner_l-padding {
+    padding: 2.75rem 2.75rem;
+}
+
 .partner_as-column {
     flex-direction: column;
+    align-items: center;
 }
 
 .partner__icon {
-    background-repeat: no-repeat;
-    background-position: center;
-    flex-grow: 1;
-    flex-shrink: 0;
-    min-width: 6.25rem;
-    height: 6.25rem;
-}
 
-.partner__bank-icon {
-    background-image: url('assets/images/bank.png');
-}
-
-.partner__thumb-up-icon {
-    background-image: url('assets/images/thumb-up.png');
-}
-
-.partner__event-icon {
-    background-image: url('assets/images/event.png');
-}
-
-.partner__pets-icon {
-    background-image: url('assets/images/pets.png');
 }
 
 .partner__text {
@@ -475,11 +439,16 @@ a {
 }
 
 .contacts {
+    width: 100%;
+
     padding: 1.25rem 2.75rem;
-    margin: 0 1.5rem;
 
     background-color: #FEFEFE;
     box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.23);
+}
+
+.contacts_tablet {
+    width: 25rem;
 }
 
 .contact {
@@ -508,50 +477,128 @@ a {
 }
 
 .contact__icon {
+}
+
+.text {
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+    word-break: break-word;
+}
+
+.text_bold {
+    font-weight: 600;
+}
+
+.text_size-s {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.text_size-m {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.text_size-m-05 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+}
+
+.text_size-m-1 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+}
+
+.text_size-l {
+    font-size: 4rem;
+    line-height: 5rem;
+}
+
+.text_align-center {
+    text-align: center;
+}
+
+.text_align-justify {
+    text-align: justify;
+}
+
+.text_light {
+    color: #F2F2F2;
+}
+
+.icon {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
-.contact__icon_m-size {
+.icon_m-size {
     width: 3.125rem;
     height: 3.125rem;
 }
 
-.contact__icon_l-size {
+.icon_m1-size {
+    width: 7rem;
+    height: 7rem;
+}
+
+.icon_l-size {
     width: 10rem;
     height: 10rem;
 }
 
-.contact__icon_bottom-offset {
+.icon_l1-size {
+    width: 15rem;
+    height: 15rem;
+}
+
+.icon_top-offset {
+    margin-top: 1.5rem;
+}
+
+.icon_bottom-offset {
     margin-bottom: 1.5rem;
 }
 
-.contact__icon_right-offset {
+.icon_right-offset {
     margin-right: 1.5rem;
 }
 
-.contact__icon_email {
+.icon_bank {
+    background-image: url('assets/images/bank.png');
+}
+
+.icon_thumb-up {
+    background-image: url('assets/images/thumb-up.png');
+}
+
+.icon_event {
+    background-image: url('assets/images/event.png');
+}
+
+.icon_pets {
+    background-image: url('assets/images/pets.png');
+}
+
+.icon_email {
     background-image: url('assets/images/email.png');
 }
 
-.contact__icon_in {
+.icon_in {
     background-image: url('assets/images/in.png');
 }
 
-.contact__icon_hh {
+.icon_hh {
     background-image: url('assets/images/hh.png');
 }
 
-.contact__icon_phone {
+.icon_phone {
     background-image: url('assets/images/phone.png');
 }
 
-.contact__text {
-    font-weight: 600;
-    letter-spacing: 0.05rem;
-    word-break: break-word;
-    text-align: center;
+.icon__text {
 }
 
 .cursor-pointer {

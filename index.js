@@ -45,6 +45,11 @@ $(document).ready(() => {
         $('.logo').removeClass('logo_size-m');
         $('.logo').removeClass('logo_size-l');
 
+        $('.page__content').removeClass('page__content_tablet');
+
+        $('.content').removeClass('content_tablet');
+        $('.content').removeClass('content_phone');
+
         $('.page__title').removeClass('text_size-s');
         $('.page__title').removeClass('text_size-m-1');
         $('.page__title').removeClass('page__title_small-underline');
@@ -56,20 +61,37 @@ $(document).ready(() => {
         $('.footer__text').removeClass('text_size-s');
         $('.footer__text').removeClass('text_size-m');
 
-        $('.contact__icon').removeClass('contact__icon_right-offset');
-        $('.contact__icon').removeClass('contact__icon_bottom-offset');
-        $('.contact__icon').removeClass('contact__icon_l-size');
-        $('.contact__icon').removeClass('contact__icon_m-size');
+        $('.contact__icon').removeClass('icon_right-offset');
+        $('.contact__icon').removeClass('icon_bottom-offset');
+        $('.contact__icon').removeClass('icon_l-size');
+        $('.contact__icon').removeClass('icon_m-size');
+        $('.partner__icon').removeClass('icon_l1-size');
+        $('.partner__icon').removeClass('icon_top-offset');
+        $('.partner__icon').removeClass('icon_bottom-offset');
+
+        $('.contacts').removeClass('contacts_tablet');
 
         $('.contact').removeClass('contact_as-columns');
+
+        $('.partners').removeClass('partners_m-gap');
+        $('.partners').removeClass('partners_l-gap');
+        
+        $('.partner').removeClass('partner_as-column');
+        $('.partner').removeClass('partner_m-padding');
+        $('.partner').removeClass('partner_l-padding');
+
+        $('.icon__text').removeClass('text_size-m');
+        $('.icon__text').removeClass('text_size-l');
         $('.partner__text').removeClass('partner__text_left-offset');
         $('.partner__text').removeClass('text_align-justify');
-        $('.partner').removeClass('partner_as-column');
-        $('.contact__text').removeClass('text_size-m');
-        $('.contact__text').removeClass('text_size-l');
+        $('.partner__text').removeClass('text_align-center');
+        $('.partner__text').removeClass('text_size-m');
+        $('.partner__text').removeClass('text_size-l');
 
         if(window.screen.width <= 425) {
             $('.logo').addClass('logo_size-l');
+
+            $('.content').addClass('content_phone');
 
             $('.page__title').addClass('text_size-m-1');
             $('.page__title').addClass('page__title_underline');
@@ -77,25 +99,51 @@ $(document).ready(() => {
             $('.footer__text').addClass('text_size-m');
 
             $('.contact').addClass('contact_offset-l');
-            $('.contact__text').addClass('text_size-l');
-            $('.contact__icon').addClass('contact__icon_bottom-offset');
-            $('.contact__icon').addClass('contact__icon_l-size');
+
+            $('.icon__text').addClass('text_size-l');
+            $('.partner__text').addClass('text_size-l');
+            $('.partner__text').addClass('text_align-center');
+
+            $('.contact__icon').addClass('icon_bottom-offset');
+            $('.contact__icon').addClass('icon_l-size');
+            $('.partner__icon').addClass('icon_l1-size');
+            $('.partner__icon').addClass('icon_top-offset');
+            $('.partner__icon').addClass('icon_bottom-offset');
+
             $('.contact').addClass('contact_as-columns');
+
+            $('.partners').addClass('partners_l-gap');
+
             $('.partner').addClass('partner_as-column');
+            $('.partner').addClass('partner_l-padding');
         } else {
             $('.logo').addClass('logo_size-m');
+
+            $('.page__content').addClass('page__content_tablet');
+
+            $('.content').addClass('content_tablet');
 
             $('.page__title').addClass('text_size-m');
             $('.page__title').addClass('page__title_small-underline');
 
             $('.footer__text').addClass('text_size-s');
 
+            $('.contacts').addClass('contacts_tablet');
+
             $('.contact').addClass('contact_offset-m');
-            $('.contact__text').addClass('text_size-m');
-            $('.contact__icon').addClass('contact__icon_right-offset');
-            $('.contact__icon').addClass('contact__icon_m-size');
+
+            $('.contact__icon').addClass('icon_right-offset');
+            $('.contact__icon').addClass('icon_m-size');
+            $('.partner__icon').addClass('icon_m1-size');
+
+            $('.icon__text').addClass('text_size-m');
+            $('.partner__text').addClass('text_size-m');
             $('.partner__text').addClass('partner__text_left-offset');
             $('.partner__text').addClass('text_align-justify');
+
+            $('.partners').addClass('partners_m-gap');
+
+            $('.partner').addClass('partner_m-padding');
         }
     }
     
