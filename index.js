@@ -46,6 +46,7 @@ $(document).ready(() => {
         $('.logo').removeClass('logo_size-l');
 
         $('.page__content').removeClass('page__content_tablet');
+        $('.page__content').removeClass('page__content_phone');
 
         $('.technologies').removeClass('technologies_as-column');
         $('.technologies').removeClass('technologies_m-gap');
@@ -106,10 +107,13 @@ $(document).ready(() => {
         $('.dialog__message').removeClass('text_size-l');
         $('.dialog__message').removeClass('text_align-center');
         $('.dialog__message').removeClass('text_align-justify');
-        $('.dialog__message').removeClass('dialog__message_offset');
+        $('.dialog__message').removeClass('dialog__message_left-offset');
+        $('.dialog__message').removeClass('dialog__message_y-offset');
 
         if(window.screen.width <= 425) {
             $('.logo').addClass('logo_size-l');
+
+            $('.page__content').addClass('page__content_phone');
 
             $('.technologies').addClass('technologies_l-gap');
 
@@ -130,6 +134,7 @@ $(document).ready(() => {
             $('.partner__text').addClass('text_align-center');
             $('.dialog__message').addClass('text_size-l');
             $('.dialog__message').addClass('text_align-center');
+            $('.dialog__message').addClass('dialog__message_y-offset');
 
             $('.contact__icon').addClass('icon_bottom-offset');
             $('.contact__icon').addClass('icon_l-size');
@@ -181,7 +186,7 @@ $(document).ready(() => {
             $('.partner__text').addClass('text_align-justify');
             $('.dialog__message').addClass('text_size-m');
             $('.dialog__message').addClass('text_align-justify');
-            $('.dialog__message').addClass('dialog__message_offset');
+            $('.dialog__message').addClass('dialog__message_left-offset');
 
             $('.partners').addClass('partners_m-gap');
 

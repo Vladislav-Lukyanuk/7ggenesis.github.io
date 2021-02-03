@@ -220,8 +220,13 @@ a {
 .dialog__message {
 }
 
-.dialog__message_offset {
+.dialog__message_left-offset {
     margin-left: 4rem;
+}
+
+.dialog__message_y-offset {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 .dialog__message_bold {
@@ -285,6 +290,10 @@ a {
 .page__content {
     display: flex;
     justify-content: center;
+}
+
+.page__content_phone {
+    margin-top: 3rem;
 }
 
 .page__content_tablet {
