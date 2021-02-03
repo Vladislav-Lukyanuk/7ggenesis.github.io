@@ -152,6 +152,8 @@ a {
     background-size: cover;
 }
 
+/*__Notification_section__*/
+
 .notification {
     display: flex;
     justify-content: center;
@@ -175,6 +177,8 @@ a {
     letter-spacing: 0.1rem;
 }
 
+/*__Content_section__*/
+
 .content {
     max-width: 64rem;
 }
@@ -195,6 +199,8 @@ a {
     margin-bottom: 7.5rem;
 }
 
+/*__Dialog_section__*/
+
 .dialog {
     display: flex;
     flex-direction: column;
@@ -204,37 +210,26 @@ a {
     padding: 0 1.5rem;
 }
 
-.dialog > * + * {
-    margin-top: 2rem;
+.dialog_as-row {
+    flex-direction: row;
 }
 
 .dialog__byte {
-    height: 8.75rem;
-    width: 8.75rem;
-    min-width: 8.75rem;
-
-    background-image: url('assets/images/face.png'); 
 }
 
 .dialog__message {
-    flex-grow: 1;
-
-    font-size: 1.5rem;
-    line-height: 2rem;
 }
 
-.dialog__message_center_align {
-    text-align: center;
-}
-
-.dialog__message_justified_align {
-    text-align: justify;
+.dialog__message_offset {
+    margin-left: 4rem;
 }
 
 .dialog__message_bold {
     text-decoration: underline;
     color: #D15718;
 }
+
+/*__Page_section__*/
 
 .page {
     display: flex;
@@ -296,6 +291,8 @@ a {
     padding: 0 1.5rem;
 }
 
+/*__Business_section__*/
+
 .business {
     display: flex;
     flex-direction: column;
@@ -326,10 +323,23 @@ a {
     color: white;
 }
 
+/*__Technologies_section__*/
+
 .technologies {
     display: grid;
     grid-template-columns: 1fr;
+}
+
+.technologies_m-gap {
     grid-gap: 3rem;
+}
+
+.technologies_l-gap {
+    grid-gap: 5rem;
+}
+
+.technologies_as-column {
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .technology {
@@ -343,50 +353,29 @@ a {
     justify-content: center;
     align-items: center;
 
-    width: 12.5rem;
-    height: 12.5rem;
+    width: var(--size);
+    height: var(--size);
 
     background-color: #D15718;
     border-radius: 50%;
 }
 
-.technology__react {
-    height: 6.25rem;
-    width: 6.25rem;
-
-    background-image: url('assets/images/react.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+.technoligy__circle_m-size {
+    --size: 12.5rem;
 }
 
-.technology__ts {
-    height: 6.25rem;
-    width: 6.25rem;
-
-    background-image: url('assets/images/ts.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+.technoligy__circle_l-size {
+    --size: 28rem;
 }
 
-.technology__redux {
-    height: 6.25rem;
-    width: 6.625rem;
-
-    background-image: url('assets/images/redux.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+.technology__icon {
 }
 
 .technology__text {
     margin-top: 1.5rem;
-
-    font-size: 1.5rem;
-    font-weight: 600;
-    letter-spacing: 0.05rem;
 }
+
+/*__Partners_section__*/
 
 .partners {
     display: grid;
@@ -426,8 +415,6 @@ a {
 }
 
 .partner__text {
-    font-weight: 300;
-    letter-spacing: 0.05rem;
 }
 
 .partner__text_left-offset {
@@ -437,6 +424,8 @@ a {
 .partner__text strong {
     font-weight: 600;
 }
+
+/*__Contacts_section__*/
 
 .contacts {
     width: 100%;
@@ -478,6 +467,27 @@ a {
 
 .contact__icon {
 }
+
+/*__Footer_section__*/
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 1.5rem 0 1rem;
+
+    background-color: #161616;
+}
+
+.footer__text {
+}
+
+.footer_top-offset {
+    margin-top: 5rem;
+}
+
+/*__Common_section__*/
 
 .text {
     font-weight: 300;
@@ -598,28 +608,27 @@ a {
     background-image: url('assets/images/phone.png');
 }
 
+.icon_byte {
+    background-image: url('assets/images/face.png');
+}
+
+.icon_react {
+    background-image: url('assets/images/react.png');
+}
+
+.icon_ts {
+    background-image: url('assets/images/ts.png');
+}
+
+.icon_redux {
+    background-image: url('assets/images/redux.png');
+}
+
 .icon__text {
 }
 
 .cursor-pointer {
     cursor: pointer;
-}
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    padding: 1.5rem 0 1rem;
-
-    background-color: #161616;
-}
-
-.footer__text {
-}
-
-.footer_top-offset {
-    margin-top: 5rem;
 }
 
 /* @media screen and (max-width: 768px) {
