@@ -144,12 +144,18 @@ a {
 .office {
     position: relative;
 
-    height: 29.375rem;
-
     background-image: url('assets/images/man.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.office_m-height {
+    height: 29.375rem;
+}
+
+.office_l-height {
+    height: 46.375rem;
 }
 
 /*__Notification_section__*/
@@ -169,12 +175,8 @@ a {
 }
 
 .notification__text {
-    text-align: center;
-
-    font-size: 1.25rem;
-    line-height: 1.5rem;
     font-weight: 400;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.2rem;
 }
 
 /*__Content_section__*/
@@ -522,7 +524,7 @@ a {
 
 .text_size-m-05 {
     font-size: 3rem;
-    line-height: 3.5rem;
+    line-height: 3.75rem;
 }
 
 .text_size-m-1 {

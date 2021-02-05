@@ -66,6 +66,8 @@ $(document).ready(() => {
         $('.footer__text').removeClass('text_size-s');
         $('.footer__text').removeClass('text_size-m');
 
+        $('.office').removeClass('office_m-height');
+        $('.office').removeClass('office_l-height');
 
         $('.business').removeClass('business_l-padding');
         $('.business').removeClass('business_as-row');
@@ -119,6 +121,8 @@ $(document).ready(() => {
         $('.business__text').removeClass('text_size-m');
         $('.business__text').removeClass('text_size-l');
         $('.business__text').removeClass('text_align-center');
+        $('.notification__text').removeClass('text_size-m');
+        $('.notification__text').removeClass('text_size-m-05');
 
         if(window.screen.width <= 425) {
             $('.logo').addClass('logo_size-l');
@@ -137,6 +141,8 @@ $(document).ready(() => {
 
             $('.footer__text').addClass('text_size-m');
 
+            $('.office').addClass('office_l-height');
+
             $('.business').addClass('business_l-padding');
 
             $('.contact').addClass('contact_offset-l');
@@ -149,6 +155,7 @@ $(document).ready(() => {
             $('.dialog__message').addClass('dialog__message_y-offset');
             $('.business__text').addClass('text_size-l');
             $('.business__text').addClass('text_align-center');
+            $('.notification__text').addClass('text_size-m-05');
 
             $('.contact__icon').addClass('icon_bottom-offset');
             $('.contact__icon').addClass('icon_l-size');
@@ -183,8 +190,12 @@ $(document).ready(() => {
 
             $('.footer__text').addClass('text_size-s');
 
+            $('.office').addClass('office_m-height');
+
             $('.business').addClass('business_as-row');
             $('.business').addClass('business_m-padding');
+
+            $('.notification__text').addClass('text_size-m');
 
             $('.dialog').addClass('dialog_as-row');
 
