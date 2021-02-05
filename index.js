@@ -66,6 +66,11 @@ $(document).ready(() => {
         $('.footer__text').removeClass('text_size-s');
         $('.footer__text').removeClass('text_size-m');
 
+
+        $('.business').removeClass('business_l-padding');
+        $('.business').removeClass('business_as-row');
+        $('.business').removeClass('business_m-padding');
+
         $('.contact__icon').removeClass('icon_right-offset');
         $('.contact__icon').removeClass('icon_bottom-offset');
         $('.contact__icon').removeClass('icon_l-size');
@@ -77,6 +82,8 @@ $(document).ready(() => {
         $('.dialog__byte').removeClass('icon_l-size');
         $('.technology__icon').removeClass('icon_l1-size');
         $('.technology__icon').removeClass('icon_m1-size');
+        $('.business__icon').removeClass('icon_l-size');
+        $('.business__icon').removeClass('icon_m-size');
 
         $('.technoligy__circle').removeClass('technoligy__circle_l-size');
         $('.technoligy__circle').removeClass('technoligy__circle_m-size');
@@ -107,8 +114,11 @@ $(document).ready(() => {
         $('.dialog__message').removeClass('text_size-l');
         $('.dialog__message').removeClass('text_align-center');
         $('.dialog__message').removeClass('text_align-justify');
-        $('.dialog__message').removeClass('dialog__message_left-offset');
+        $('.dialog__message').removeClass('dialog__message_x-offset');
         $('.dialog__message').removeClass('dialog__message_y-offset');
+        $('.business__text').removeClass('text_size-m');
+        $('.business__text').removeClass('text_size-l');
+        $('.business__text').removeClass('text_align-center');
 
         if(window.screen.width <= 425) {
             $('.logo').addClass('logo_size-l');
@@ -127,6 +137,8 @@ $(document).ready(() => {
 
             $('.footer__text').addClass('text_size-m');
 
+            $('.business').addClass('business_l-padding');
+
             $('.contact').addClass('contact_offset-l');
 
             $('.icon__text').addClass('text_size-l');
@@ -135,6 +147,8 @@ $(document).ready(() => {
             $('.dialog__message').addClass('text_size-l');
             $('.dialog__message').addClass('text_align-center');
             $('.dialog__message').addClass('dialog__message_y-offset');
+            $('.business__text').addClass('text_size-l');
+            $('.business__text').addClass('text_align-center');
 
             $('.contact__icon').addClass('icon_bottom-offset');
             $('.contact__icon').addClass('icon_l-size');
@@ -143,6 +157,7 @@ $(document).ready(() => {
             $('.partner__icon').addClass('icon_bottom-offset');
             $('.dialog__byte').addClass('icon_l1-size');
             $('.technology__icon').addClass('icon_l1-size');
+            $('.business__icon').addClass('icon_l-size');
 
             $('.contact').addClass('contact_as-columns');
 
@@ -168,6 +183,9 @@ $(document).ready(() => {
 
             $('.footer__text').addClass('text_size-s');
 
+            $('.business').addClass('business_as-row');
+            $('.business').addClass('business_m-padding');
+
             $('.dialog').addClass('dialog_as-row');
 
             $('.contacts').addClass('contacts_tablet');
@@ -179,6 +197,8 @@ $(document).ready(() => {
             $('.partner__icon').addClass('icon_m1-size');
             $('.dialog__byte').addClass('icon_l-size');
             $('.technology__icon').addClass('icon_m1-size');
+            $('.business__icon').addClass('icon_m-size');
+
 
             $('.icon__text').addClass('text_size-m');
             $('.partner__text').addClass('text_size-m');
@@ -186,7 +206,8 @@ $(document).ready(() => {
             $('.partner__text').addClass('text_align-justify');
             $('.dialog__message').addClass('text_size-m');
             $('.dialog__message').addClass('text_align-justify');
-            $('.dialog__message').addClass('dialog__message_left-offset');
+            $('.dialog__message').addClass('dialog__message_x-offset');
+            $('.business__text').addClass('text_size-m');
 
             $('.partners').addClass('partners_m-gap');
 
