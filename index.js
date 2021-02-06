@@ -13,8 +13,6 @@ const COMPONENTS = {
     }
 }
 
-
-
 $.fn.isInViewport = function() {
     var elementTop = $(this).offset().top;
     var elementBottom = elementTop + $(this).outerHeight();
@@ -41,7 +39,19 @@ $(document).ready(() => {
     }
 
     const adapt = function() {
-        console.log('adapt')
+        $('.head').removeClass('head_inner-offset-m');
+        $('.head').removeClass('head_inner-offset-l');
+
+        $('.head__menu-item').removeClass('text_size-l');
+        $('.head__menu-item').removeClass('text_size-m');
+        $('.head__menu-item').removeClass('head__menu-item_phone');
+        $('.head__menu-item').removeClass('head__menu-item_tablet');
+
+        $('.head__menu').removeClass('head__menu_phone');
+        $('.head__menu-icon').removeClass('head__menu-icon_hide');
+        $('.head__question').removeClass('icon_s-size');
+        $('.head__question').removeClass('head__question_hide');
+
         $('.logo').removeClass('logo_size-m');
         $('.logo').removeClass('logo_size-l');
 
@@ -125,6 +135,14 @@ $(document).ready(() => {
         $('.notification__text').removeClass('text_size-m-05');
 
         if(window.screen.width <= 425) {
+            $('.head').addClass('head_inner-offset-l');
+
+            $('.head__menu-item').addClass('text_size-l');
+            $('.head__menu-item').addClass('head__menu-item_phone');
+
+            $(' .head__menu').addClass('head__menu_phone');
+            $('.head__question').addClass('head__question_hide');
+
             $('.logo').addClass('logo_size-l');
 
             $('.page__content').addClass('page__content_phone');
@@ -173,6 +191,15 @@ $(document).ready(() => {
             $('.partner').addClass('partner_as-column');
             $('.partner').addClass('partner_l-padding');
         } else {
+            $('.head').addClass('head_inner-offset-m');
+
+            $('.head__menu-icon').addClass('head__menu-icon_hide');
+
+            $('.head__question').addClass('icon_s-size');
+            
+            $('.head__menu-item').addClass('text_size-m');
+            $('.head__menu-item').addClass('head__menu-item_tablet');
+
             $('.logo').addClass('logo_size-m');
 
             $('.page__content').addClass('page__content_tablet');
