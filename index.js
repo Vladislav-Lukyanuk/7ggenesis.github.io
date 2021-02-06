@@ -32,7 +32,7 @@ $(document).ready(() => {
 
     const showBlocksInViewport = function() {
         $('.fade-in-block').each(function() {
-          if ($(this).isInViewport()) {
+          if ($(this).isInViewport() && !$(this).hasClass(`${COMPONENTS.fadeInBlock.block}_${VISIBILITY_COMPONENT_STATE}`)) {
             $(this).addClass(`${COMPONENTS.fadeInBlock.block}_${VISIBILITY_COMPONENT_STATE}`);
           }
         });
@@ -258,9 +258,11 @@ $(document).ready(() => {
         toggleHoverState(COMPONENTS.head.elements.question)
     );
 
-    $(window).on('resize scroll', showBlocksInViewport);
     $(window).on('resize', adapt);
-
-    showBlocksInViewport();
     adapt();
+
+    setTimeout(() => {
+        $(window).on('resize scroll', showBlocksInViewport);
+        showBlocksInViewport();
+    }, 300);
 });
