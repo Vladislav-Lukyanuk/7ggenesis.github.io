@@ -30,6 +30,6 @@
         width: 0;
     }
     100% {
-        width: 5rem;
+        width: var(--width);
     }
 }
