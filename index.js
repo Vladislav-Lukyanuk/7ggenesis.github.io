@@ -134,7 +134,7 @@ $(document).ready(() => {
         $('.notification__text').removeClass('text_size-m');
         $('.notification__text').removeClass('text_size-m-05');
 
-        if(window.screen.width <= 425) {
+        if(window.screen.width <= 768 || window.matchMedia('(max-width: 768px)').matches) {
             $('.head').addClass('head_inner-offset-l');
 
             $('.head__menu-item').addClass('text_size-l');

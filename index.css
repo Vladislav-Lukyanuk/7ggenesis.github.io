@@ -83,7 +83,7 @@ a {
 }
 
 .head__menu-item_tablet {
-    padding: 0 1rem;
+    padding: 0 0.75rem;
 }
 
 .head__menu-item_tablet + .head__menu-item_tablet::before {
